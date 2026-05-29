@@ -1,173 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Happy Month Anniversary</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-            background: #ff5c8a;
-
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .page {
-            width: 100%;
-            max-width: 650px;
-            padding: 25px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .box {
-            background: rgb(251, 237, 237);
-
-            padding: 25px;
-            border-radius: 20px;
-
-            text-align: center;
-
-            width: 100%;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-
-        }
-
-
-        button {
-            margin-top: 15px;
-            padding: 10px 22px;
-
-            border: none;
-            border-radius: 22px;
-
-            background: #ff5c8a;
-
-            color: white;
-
-            font-size: 15px;
-
-            cursor: pointer;
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="page" id="one">
+    <!-- NAVBAR -->
 
+    <nav>
 
-        <div class="box">
+        <div>
+            <div class="profile_name">
+                Jane Doe
+            </div>
+
+            <div class="contact_info">
+                jdoe@jeemail.com
+            </div>
+
+            <div class="contact_info">
+                +13456764598
+            </div>
+        </div>
+
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+
+            <a class="topmenu" href="#skills">Skills</a>
+
+            <a class="topmenu" href="#projects">Projects</a>
+
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+
+    </nav>
+
+    <!-- ABOUT -->
+
+    <section id="about-me" class="container">
+
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png"
+                 class="profile_image" />
+        </div>
+
+        <div>
+
+            <h1>
+                Hi, I'm Jane Doe!
+            </h1>
+
             <p>
-                31 months with you feels like a beautiful story still being written.<br>
-                Every day with you adds more love to my heart.<br>
-
-                You’re my comfort, my smile, my safe place.<br>
-                Here’s to us❤️
+                I am a full stack developer with 2 years of experience in both
+                application and presentation layers. I have worked on applications
+                and microservices deployed on IBM Cloud.
             </p>
 
-            <h2>Happy Month Anniversary 💕</h2>
-            <p><strong>Piyush Bubaaa</strong></p>
-
-            <p>5 July 2023 → 5 February 2026</p>
-            <p>Still choosing each other ✨</p>
-
-            <button onclick="next('one','two')">Next</button>
         </div>
-    </div>
 
+    </section>
 
+    <!-- SKILLS -->
 
-    <div class="page hidden" id="two">
+    <section id="skills">
 
-        <div class="box">
-            <h3>Our Journey 🕰️</h3>
-            <p>
+        <h2>Skills</h2>
 
-                The day we started 💫<br>
-                The laughs we shared 😂<br>
+        <div class="all_skills">
 
-                The fights we survived 🤍<br>
-                Every month we chose
-                love 💕
+            <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" />
 
-            </p>
+                <h6>HTML</h6>
 
-            <button onclick="next('two','three')">Next</button>
-        </div>
-    </div>
+                <p>2 years experience</p>
+            </div>
 
+            <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
 
+                <h6>JavaScript</h6>
 
-    <div class="page hidden" id="three">
-       
-        <div class="box">
+                <p>1.5 years experience</p>
+            </div>
 
+            <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" />
 
-            <h2>31 Months 💖</h2>
+                <h6>Java</h6>
 
-            <p>Still choosing you.
+                <p>5 years experience</p>
+            </div>
 
+            <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" />
 
-            </p>
-            <p>With you, I feel protected and safe.
-                You never dim my light you guard it.
-                Thank you for being my home❤️</p>
+                <h6>React</h6>
 
-            <button onclick="next('three','four')">Next</button>
-        </div>
-    </div>
+                <p>1 year experience</p>
+            </div>
 
+            <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" />
 
+                <h6>Node.js</h6>
 
+                <p>1 year experience</p>
+            </div>
 
-    <div class="page hidden" id="four">
-        
-        <div class="box">
-            <p>
-                Loving you hasn’t always been easy,<br>
-                but it’s always been worth it🤍
+            <div class="skill">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" />
 
-            </p>
-            <button onclick="next('four','five')">Next
+                <h6>CSS</h6>
 
-            </button>
+                <p>2 years experience</p>
+            </div>
 
         </div>
-    </div>
 
+    </section>
 
+    <!-- PROJECTS -->
 
-    <div class="page hidden" id="five">
-       
-        <div class="box">
+    <section class="projects" id="projects">
 
-            <h2>I Choose You ❤️</h2>
-            <p>Every month. Every year.</p>
+        <h2>Projects</h2>
 
-            <p>Happy 31 Monts to US💕</p>
+        <div class="project-container">
+
+            <div class="project-card">
+
+                <h3>Chatbot</h3>
+
+                <ul>
+                    <li>
+                        Developed a secure website integrated with chatbot
+                        for an automobile client using HTML, CSS,
+                        JavaScript and IBM Watson Assistant
+                    </li>
+                </ul>
+
+            </div>
+
+            <hr>
+
+            <div class="project-card">
+
+                <h3>Sentiment Analyzer</h3>
+
+                <ul>
+                    <li>
+                        Developed and deployed a sentiment analyzer
+                        for the box reviews section of an eCommerce platform
+                        using IBM NLU
+                    </li>
+                </ul>
+
+            </div>
+
+            <hr>
+
+            <div class="project-card">
+
+                <h3>Fashion Website</h3>
+
+                <ul>
+                    <li>
+                        Created a styled multi-page website for a new player
+                        in the fashion industry and integrated it with
+                        a shopping cart using stripe payment gateway
+                    </li>
+                </ul>
+
+            </div>
+
         </div>
+
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+
+    <section id="recommendations">
+
+        <h2>Recommendations</h2>
+
+        <div class="all_recommendations" id="all_recommendations">
+
+            <div class="recommendation">
+                “ Jane is a very quick learner and quickly grasps key concepts
+                of Web development. ”
+            </div>
+
+            <div class="recommendation">
+                “ Working with Jane has been an awesome experience.
+                She is highly knowledgeable. ”
+            </div>
+
+            <div class="recommendation">
+                “ She is a committed resource and excellent team player. ”
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="flex_center">
+
+            <fieldset>
+
+                <legend class="introduction">
+                    Leave a Recommendation
+                </legend>
+
+                <input type="text"
+                       placeholder="Name (Optional)">
+
+                <textarea id="new_recommendation"
+                          cols="50"
+                          rows="10"
+                          placeholder="Message"></textarea>
+
+                <div class="flex_center">
+
+                    <button id="recommend_btn"
+                            onclick="addRecommendation()">
+                        Submit
+                    </button>
+
+                </div>
+
+            </fieldset>
+
+        </div>
+
+    </section>
+
+    <!-- POPUP -->
+
+    <div class="popup" id="popup">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" />
+
+        <h3>
+            Thanks for leaving a recommendation!
+        </h3>
+
+        <button onclick="showPopup(false)">
+            Ok
+        </button>
+
     </div>
 
+    <!-- HOME BUTTON -->
 
-    <script>
-        function next(current, nextPage) {
-            document.getElementById(current).classList.add("hidden");
-            document.getElementById(nextPage).classList.remove("hidden");
-        }
-    </script>
+    <div class="iconbutton">
+
+        <a href="#top">
+            ⬆
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
